@@ -27,3 +27,7 @@ Printer(code, model, color, type, price)
   Найдите номер модели, объем памяти и размеры экранов ПК-блокнотов, цена которых превышает 1000 дол.
   Решение: SELECT model, ram, screen FROM Laptop WHERE price>1000
   
+  Задание 4
+  Найдите все записи таблицы Printer для цветных принтеров.
+  Решение: SELECT * FROM Printer WHERE color='y'
+  
