@@ -40,3 +40,14 @@ Printer(code, model, color, type, price)
   Решение: SELECT DISTINCT Product.maker, Laptop.speed 
            FROM Product, Laptop 
            WHERE Laptop.model = Product.model AND Laptop.hd >= 10 AND Product.type='laptop'
+
+ Задание 7
+ Найдите номера моделей и цены всех имеющихся в продаже продуктов (любого типа) производителя B (латинская буква).
+ Решение: SELECT DISTINCT product.model, pc.price
+          FROM Product JOIN pc ON product.model = pc.model WHERE maker = 'B'
+          UNION
+          SELECT DISTINCT product.model, laptop.price
+          FROM product JOIN laptop ON product.model=laptop.model WHERE maker='B'
+          UNION
+          SELECT DISTINCT product.model, printer.price
+          FROM product JOIN printer ON product.model=printer.model WHERE maker='B'
