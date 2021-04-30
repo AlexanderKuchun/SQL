@@ -32,3 +32,7 @@ List the first five Pixar movies sorted alphabetically
   SELECT title FROM movies ORDER BY title LIMIT 5
 List the next five Pixar movies sorted alphabetically 
   SELECT title FROM movies ORDER BY title LIMIT 5 OFFSET 5
+  
+Exercise 5 - Tasks
+
+
