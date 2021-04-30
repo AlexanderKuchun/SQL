@@ -45,3 +45,11 @@ List the two largest cities in Mexico (by population)
   SELECT City FROM north_american_cities WHERE Country="Mexico" ORDER BY Population DESC LIMIT 2
 List the third and fourth largest cities (by population) in the United States and their population 
   SELECT City FROM north_american_cities WHERE Country="United States" ORDER BY Population DESC LIMIT 2 OFFSET 2
+
+Exercise 5 - Tasks
+
+Find the domestic and international sales for each movie
+  SELECT title, Domestic_sales, International_sales
+  FROM movies
+  INNER JOIN Boxoffice 
+    ON movies.id=Boxoffice.movie_id
