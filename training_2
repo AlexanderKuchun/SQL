@@ -65,3 +65,8 @@ List all the movies by their ratings in descending order
   INNER JOIN boxoffice
    ON movies.id = boxoffice.movie_id
   ORDER BY Rating DESC
+
+Exercise 7 — Tasks
+
+Find the list of all buildings that have employees
+  SELECT DISTINCT Building FROM employees
